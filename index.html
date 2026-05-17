@@ -400,6 +400,39 @@
     color: var(--text-soft);
   }
 
+  /* Resume CTA — hero download button */
+  .resume-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 36px;
+    padding: 16px 28px;
+    background: var(--accent);
+    color: #ffffff;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 1px solid var(--accent);
+    text-decoration: none;
+    transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease, box-shadow 0.3s ease;
+    align-self: flex-start;
+  }
+  .resume-cta:hover {
+    background: var(--text);
+    border-color: var(--text);
+    transform: translateY(-2px);
+    box-shadow: 0 14px 28px -12px rgba(0,0,0,0.3);
+  }
+  .resume-cta .download-icon {
+    font-size: 16px;
+    line-height: 1;
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+  .resume-cta:hover .download-icon { transform: translateY(2px); }
+
   .hero-right {
     position: relative;
   }
@@ -1942,6 +1975,12 @@
         <div class="stat-label"><span class="i18n-en">Major GPA</span><span class="i18n-zh">专业 GPA</span></div>
       </div>
     </div>
+
+    <a class="resume-cta reveal visible d5" href="assets/edwardturdmat_resume.pdf" download>
+      <span class="i18n-en">Download Resume</span>
+      <span class="i18n-zh">下载简历</span>
+      <span class="download-icon">↓</span>
+    </a>
   </div>
 
   <div class="hero-right reveal visible d2">
